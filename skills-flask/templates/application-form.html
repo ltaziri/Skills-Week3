@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block title %} Ubermelon Career Page {% endblock %}
+        {% block content %}
+        
+        <div class="row">
+            <section class="col-xs-12 col-md-10">
+                <h1>Welcome to our Career Site!</h1>
+                <p class="intro">We expect our employees to work hard and give 
+                    us everything you got! In exchange we promise to work you 
+                    even harder, give you the legal bare minimum of benefits and 
+                    the occasional rotten melon. If that sounds like the job for 
+                    you fill out the form below and Mel himself will get back to 
+                    you when he feels like it!
+                </p>
+            </section>
+        </div>
+        
+        <div class="row">
+            <section class="col-xs-12 col-md-10">
+
+                <form action="/application" method="POST" class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="firstname1">First Name:</label>
+                        <input type="text" name="firstname" class="form-control uber" id="firstname1" placeholder="Jane">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname1">Last Name:</label>
+                        <input type="text" name="lastname" class="form-control uber" id="lastname1" placeholder="Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="salary1">Minimum salary requirement:</label>
+                        <input type="text" name="salary" class="form-control uber" id="salary1" placeholder="Salary">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="position">Minimum salary requirement:</label>
+                        <select class="form-control uber" id="position" name="position">
+                            <option value="Software Engineer">Software Engineer</option>
+                            <option value="QA Engineer">QA Engineer</option>
+                            <option value="Product Manager">Product Manager</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+
+            </section> 
+        </div>  
+                <!-- <p class="form">First name:</p> 
+                </br>
+                <p class="form lastname">Last name:</p>
+                <input class="form-control" type="text" name="lastname" placeholder="Last Name" ></br> -->
+                <!-- <p class="form">Minimum salary requirement:</p>
+                <input class="form-control" type="text" name="salary" placeholder="Salary"></br> -->
+                <!-- <p class="form">Which position are you applying for?</p> 
+                
+                </br>  -->
+                
+                <!-- <input type="submit">  -->
+            
+        
+        {% endblock %}
+
+

@@ -1,0 +1,22 @@
+/*your CSS goes here*/
+form input, select {
+    background-color: #ffffcc;
+}
+
+.lastname {
+    font-weight: bold;
+}
+
+.form {
+    display:inline;
+}
+
+.intro {
+    border:2px solid black;
+}
+
+section {
+        margin-top: 50px;
+}
+
+
